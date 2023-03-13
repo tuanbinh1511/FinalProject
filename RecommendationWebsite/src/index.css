@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --default-layout-horizontal-spacer: 24px;
+  --color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   line-height: 1.2;
@@ -9,4 +18,16 @@ html {
 body {
   font-family: 'Helvetica Neue' Helvetica, Arial, sans-serif;
   font-weight: 400;
+}
+
+button,
+input,
+[tabindex] {
+  border: none;
+  outline: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
