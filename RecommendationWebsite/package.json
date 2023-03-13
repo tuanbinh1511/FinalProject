@@ -13,16 +13,18 @@
     "prettier:fix": "prettier --write \"src/**/(*.jsx|*.js|*.tsx|*ts|*.css|*.scss)\""
   },
   "dependencies": {
-
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2",
-    "sass": "^1.59.2",
+    "@floating-ui/react": "^0.21.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
     "@fortawesome/free-regular-svg-icons": "^6.0.0",
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
-    "@fortawesome/react-fontawesome": "^0.1.17"
+    "@fortawesome/react-fontawesome": "^0.1.17",
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
+    "sass": "^1.59.2"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
