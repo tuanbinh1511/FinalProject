@@ -7,14 +7,13 @@ const cx = classNames.bind(styles);
 
 function Footer() {
   return (
-    <>
-      <footer className={cx('footer', 'flex', 'flex-row', 'justify-between')}>
-        <div className={cx('info', 'basis-1/3')}>
+    <footer className={cx('flex', 'justify-center', 'flex-col', 'ml-8', 'mr-0 lg:ml-0')}>
+      <div className={cx('footer', 'flex', 'flex-col', 'justify-between', 'mr-8 flex-wrap md:flex-row', ' lg: justify-evenly')}>
+        <div className={cx('info', 'basis-1/3', 'mb-6')}>
           <h5 className={cx('title', 'mb-4', 'font-bold')}>ASHION</h5>
           <p className={cx('description')}>
             Shopee - ứng dụng mua sắm trực tuyến thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao dịch trực tuyến hàng đầu ở
-            Đông Nam Á, có trụ sở chính ở Singapore, đã có mặt ở khắp các khu vực Singapore, Malaysia, Indonesia, Thái Lan, Philippines, Đài
-            Loan, Brazil, México & Colombia. Với sự đảm bảo của Shopee, bạn sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ hết!
+            Đông Nam Á.
           </p>
         </div>
 
@@ -38,7 +37,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className={cx('email', 'basic-1/3')}>
+        <div className={cx('email', 'basic-1/3', 'mr-8', 'sm:max-md:ml-60')}>
           <h5 className={cx('title', 'mb-4', 'font-bold')}>Newsletter</h5>
           <div className={cx('email-btn')}>
             <input placeholder="Email...." />
@@ -52,11 +51,11 @@ function Footer() {
             <FontAwesomeIcon className={cx('icon')} icon={faPinterest} />
           </div>
         </div>
-      </footer>
+      </div>
       <div className={cx('copyright')}>
         <p>Copyright © 2023 All rights reserved | This template is made with by Colorlib</p>
       </div>
-    </>
+    </footer>
   );
 }
 

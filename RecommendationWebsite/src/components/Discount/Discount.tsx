@@ -7,9 +7,9 @@ const cx = classNames.bind(styles);
 
 const Discount = () => {
   return (
-    <section className={cx('discount')}>
-      <img src={images} alt="images" />
-      <div className={cx('discount-content')}>
+    <section className={cx('discount', 'flex', 'flex-col', 'mx-20 justify-evenly lg:flex-row')}>
+      <img src={images} alt="images" className={cx('lg:flex-1')} />
+      <div className={cx('discount-content', 'lg:flex-1')}>
         <div className={cx('discount-text')}>
           <span>DISCOUNT</span>
           <h2>Summer 2023</h2>

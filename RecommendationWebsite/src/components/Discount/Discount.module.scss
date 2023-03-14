@@ -1,11 +1,7 @@
 .discount {
-  display: flex;
-  width: 1150px;
-  margin: auto;
-
   img {
-    width: 50%;
     height: 390px;
+    // display: block;
   }
 }
 
@@ -14,7 +10,7 @@
   height: 390px;
   padding: 75px 90px 50px;
   text-align: center;
-  width: 50%;
+  // width: 50%;
 }
 
 .discount-text {
