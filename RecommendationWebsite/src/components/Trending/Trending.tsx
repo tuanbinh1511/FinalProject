@@ -2,89 +2,30 @@ import classNames from 'classnames/bind';
 import styles from './Trending.module.scss';
 import images from '../../assets/Images/no_image.png';
 import TrendContent from './components/TrendContent';
-import { item } from 'src/test/item.type';
-
-export type TrendType = {
-  title?: string;
-  item?: item;
-}[];
 
 const cx = classNames.bind(styles);
 
-const trends: TrendType = [
+const trends = [
   {
+    id: 1,
     title: 'HOT TREND',
-    item: [
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-    ],
   },
   {
+    id: 2,
     title: 'BEST SELLER',
-    item: [
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-    ],
   },
   {
+    id: 3,
     title: 'FEATURE',
-    item: [
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-      {
-        img: images,
-        name: 'Chain bucket bag',
-        price: '$50',
-      },
-    ],
   },
 ];
 
 const Trending = () => {
   return (
-    <section>
-      <TrendContent
-        title={'123'}
-        item={{
-          img: 'abc',
-          name: 'Chain bucket bag',
-          price: '$50',
-        }}
-      />
+    <section className={cx('trending', 'flex', 'flex-col', 'mb-8', 'ml-8', 'md:flex-row', 'm-auto lg:justify-evenly')}>
+      {trends.map((trend) => (
+        <TrendContent key={trend.id} title={trend.title} />
+      ))}
     </section>
   );
 };

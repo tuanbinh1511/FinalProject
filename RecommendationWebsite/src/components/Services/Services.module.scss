@@ -1,9 +1,8 @@
 .services-list {
-  display: flex;
-  width: 1150px;
-  margin: auto;
-  justify-content: space-between;
-  margin-bottom: 42px;
+  // max-width: 1150px;
+  // margin: auto;
+  // justify-content: space-between;
+  // margin-bottom: 42px;
 }
 
 .services-item {
@@ -12,7 +11,7 @@
 }
 
 .icon {
-  font-size: 24px;
-  margin-right: 12px;
+  font-size: 36px;
+  margin-right: 24px;
   color: #ca1515;
 }
